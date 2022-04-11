@@ -1,0 +1,17 @@
+//* Small group of colors used 
+
+$colors: (
+    dark-clr: (
+        black: #0B0D17, 
+    ), 
+    light-clr: (
+        pale-purple: #D0D6F9,
+        white: #fff
+    )
+); 
+
+//* The below function is used to retrieve the colors from the color map
+
+@function colorSet($set, $key){
+    @return map-get(map-get($colors, $set), $key)
+};

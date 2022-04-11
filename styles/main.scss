@@ -1,0 +1,22 @@
+//* Importing all style files
+//! Do not remove
+@import './partials/import'; 
+@import './typography/import'; 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body, html{
+    width: 100%;
+    height: 100vh;
+    background: url('../assets/destination/background-destination-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+

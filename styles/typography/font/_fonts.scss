@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+
+$primary-font: 'Bellefair', serif;
+$secondary-font: 'Barlow Condensed', sans-serif;
+
+//* Grouped styling for ease of readability
+
+h1, h2, h3, h4{
+    font-family: $primary-font;
+    text-transform: uppercase;
+    color: colorSet(light-clr, white);
+    font-weight: 400;
+}
+
+//* Individual styling based on font size
+
+h1{
+    @include fluidType(font-size, 320px, 2560px, 80px, 180px)
+}
+
+
+//!!! FIGURE OUT THE ISSUE WITH THE PRIMARY FONT BEFORE MOVING FORWARD
