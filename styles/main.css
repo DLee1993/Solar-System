@@ -23,6 +23,42 @@ h1 {
   }
 }
 
+.navbar {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  height: 10vh;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.3px);
+  -webkit-backdrop-filter: blur(8.3px);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar .nav-list {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  font-size: 16px;
+}
+
+.navbar .nav-list:first-child img {
+  width: 30px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 * {
   margin: 0;
   padding: 0;
