@@ -53,6 +53,22 @@ h1 {
   font-size: 16px;
 }
 
+.navbar .nav-list .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .nav-list .nav-item span, .navbar .nav-list .nav-item p {
+  display: none;
+}
+
 .navbar .nav-list:first-child img {
   width: 40px;
   -webkit-transform: rotate(-90deg);

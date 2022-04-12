@@ -18,6 +18,16 @@
         align-items: center;
         list-style: none;
         font-size: 16px;
+
+        & .nav-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & span, p{
+                display: none; //* This is only needed in the mobile view - make sure to add your media queries
+            }
+        }
     }
 
     & .nav-list:first-child{
