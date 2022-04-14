@@ -10,29 +10,4 @@
     backdrop-filter: blur(8.3px);
     -webkit-backdrop-filter: blur(8.3px);
     border-top: 1px solid rgba(255, 255, 255, 0.3);
-
-    & .nav-list {
-        height: inherit;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        list-style: none;
-        font-size: 16px;
-
-        & .nav-item{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            & span, p{
-                display: none; //* This is only needed in the mobile view - make sure to add your media queries
-            }
-        }
-    }
-    & .nav-list:first-child{
-        & img{
-            width: 40px;
-            transform: rotate(-90deg);
-        }
-    }
 }

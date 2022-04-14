@@ -38,43 +38,6 @@ h1 {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.navbar .nav-list {
-  height: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  list-style: none;
-  font-size: 16px;
-}
-
-.navbar .nav-list .nav-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navbar .nav-list .nav-item span, .navbar .nav-list .nav-item p {
-  display: none;
-}
-
-.navbar .nav-list:first-child img {
-  width: 40px;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-
 * {
   margin: 0;
   padding: 0;
