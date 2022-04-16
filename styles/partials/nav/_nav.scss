@@ -1,4 +1,5 @@
-.navbar{
+//* All styling related to the navbar is nested within the .navbar
+.navbar {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -11,7 +12,7 @@
         }
     }
 
-    & .style-line{
+    & .style-line {
         position: absolute;
         z-index: 1;
         left: 140px;
@@ -19,17 +20,20 @@
         height: 1px;
         background-color: colorSet(light-clr, white);
         opacity: 0.3;
-        @include fluidType(width, 1100px, 2560px, 330px, 950px)
+
+        //* Responsive width for the style line allows it to grow nad shrink based on screen size
+        @include fluidType(width, 1100px, 2560px, 330px, 950px);
     }
 
     & .hamburger-icon {
         cursor: pointer;
 
-        @include tablet-portrait{
+        //* hamburger icon mixin
+        @include tablet-portrait {
             display: none;
         }
     }
-
+    
     & .nav-list {
         position: fixed;
         top: 0;
@@ -40,8 +44,9 @@
         background: rgba(255, 255, 255, 0.037);
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
 
+        
         & .close-icon {
             position: relative;
             top: 5%;
@@ -56,81 +61,110 @@
                 height: 100%;
             }
         }
+       
 
-        & a{
+        & a {
             height: 100%;
             color: colorSet(light-clr, white);
             text-decoration: none;
             cursor: pointer;
         }
+        
 
-        & .nav-item{
+        & .nav-item {
+            position: relative;
             display: flex;
             justify-content: start;
             align-items: center;
             height: 50px;
-            margin: 0 0 32px;
+            margin: 0 0 32px 0;
             color: colorSet(light-clr, white);
             text-decoration: none;
             cursor: pointer;
 
-            & span{
+            & span {
                 margin: 0 10px 0 20px;
                 font-weight: bold;
+
+                //* nav item span mixin
+                @include tablet-portrait {
+                    margin: 0 10px 0 0;
+                }
+            }
+
+            //* Nav item mixin
+            @include tablet-portrait {
+                &::before {
+                    transition: 300ms;
+                    height: 3px;
+                    width: 0;
+                    bottom: 0;
+                    left: 0;
+                    content: "";
+                    position: absolute;
+                    background-color: #fff;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                }
             }
         }
 
+
         //* Nav list mixin
-        @include tablet-portrait{
+        @include tablet-portrait {
             position: relative;
-            width: 60vw;
+            width: 70vw;
             height: 80px;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
 
-            & .close-icon{
+            & .close-icon {
                 display: none;
             }
 
-            & .nav-item{
+            & .nav-item {
                 height: 100%;
                 margin: 0;
 
-                & span{
+                & span {
                     display: none;
                 }
             }
         }
 
+
         //* Nav list mixin
-        @include laptop-desktops{
-            & .nav-item span{
+        @include laptop-desktops {
+            width: 60vw;
+            & .nav-item span {
                 display: block;
             }
         }
     }
 
-    //* Navbar mixin
-    @include tablet-portrait{
+    //* Navbar mixins for multiple screen sizes
+    @include tablet-portrait {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px 0;
 
-        & .logo-homeLink{
+        & .logo-homeLink {
             margin-left: 20px;
         }
     }
 
-    @include laptop-desktops{
-        & .style-line{
+    @include laptop-desktops {
+        & .style-line {
             display: block;
         }
     }
 }
 
-.nav-list.open{
+.nav-list.open {
     width: 50vw;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }

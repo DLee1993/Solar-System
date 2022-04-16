@@ -204,8 +204,8 @@ h5 {
   background: rgba(255, 255, 255, 0.037);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .navbar .nav-list .close-icon {
@@ -233,6 +233,7 @@ h5 {
 }
 
 .navbar .nav-list .nav-item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,7 +244,7 @@ h5 {
       -ms-flex-align: center;
           align-items: center;
   height: 50px;
-  margin: 0 0 32px;
+  margin: 0 0 32px 0;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
@@ -255,9 +256,32 @@ h5 {
 }
 
 @media screen and (min-width: 600px) {
+  .navbar .nav-list .nav-item span {
+    margin: 0 10px 0 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .navbar .nav-list .nav-item::before {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    position: absolute;
+    background-color: #fff;
+  }
+  .navbar .nav-list .nav-item:hover::before {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
   .navbar .nav-list {
     position: relative;
-    width: 60vw;
+    width: 70vw;
     height: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -282,6 +306,9 @@ h5 {
 }
 
 @media screen and (min-width: 1100px) {
+  .navbar .nav-list {
+    width: 60vw;
+  }
   .navbar .nav-list .nav-item span {
     display: block;
   }
@@ -313,8 +340,8 @@ h5 {
 
 .nav-list.open {
   width: 50vw;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 * {
