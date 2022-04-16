@@ -135,23 +135,9 @@ h5 {
 
 .navText_styling {
   text-transform: uppercase;
-  letter-spacing: 2.3px;
-}
-
-.navText_styling {
+  letter-spacing: 2.7px;
+  font-weight: 400;
   font-size: 16px;
-}
-
-@media screen and (min-width: 320px) {
-  .navText_styling {
-    font-size: calc(0.26786vw + 15.14286px);
-  }
-}
-
-@media screen and (min-width: 2560px) {
-  .navText_styling {
-    font-size: 22px;
-  }
 }
 
 .navbar {
@@ -212,6 +198,13 @@ h5 {
   height: 100%;
 }
 
+.navbar .nav-list a {
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .navbar .nav-list .nav-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,12 +216,58 @@ h5 {
       -ms-flex-align: center;
           align-items: center;
   height: 50px;
-  margin: 5px 0;
+  margin: 0 0 32px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .navbar .nav-list .nav-item span {
   margin: 0 10px 0 20px;
   font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+  .navbar .nav-list {
+    position: relative;
+    width: 60vw;
+    height: 96px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+  }
+  .navbar .nav-list .close-icon {
+    display: none;
+  }
+  .navbar .nav-list .nav-item {
+    height: 100%;
+    margin: 0;
+  }
+  .navbar .nav-list .nav-item span {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .navbar .nav-list .nav-item span {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .navbar {
+    padding: 20px 0;
+  }
+  .navbar .logo-homeLink {
+    margin-left: 20px;
+  }
 }
 
 .nav-list.open {

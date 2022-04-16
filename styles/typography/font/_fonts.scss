@@ -54,6 +54,7 @@ h5{
 
 .navText_styling{
     text-transform: uppercase;
-    letter-spacing: 2.3px;
-    @include fluidType(font-size, 320px, 2560px, 16px, 22px)
+    letter-spacing: 2.7px;
+    font-weight: 400;
+    font-size: 16px;
 }

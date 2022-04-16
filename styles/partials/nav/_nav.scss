@@ -45,17 +45,64 @@
             }
         }
 
+        & a{
+            height: 100%;
+            color: colorSet(light-clr, white);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
         & .nav-item{
             display: flex;
             justify-content: start;
             align-items: center;
             height: 50px;
-            margin: 5px 0;
+            margin: 0 0 32px;
+            color: colorSet(light-clr, white);
+            text-decoration: none;
+            cursor: pointer;
 
             & span{
                 margin: 0 10px 0 20px;
                 font-weight: bold;
             }
+        }
+
+        @include tablet-portrait{
+            position: relative;
+            width: 60vw;
+            height: 96px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: auto;
+
+            & .close-icon{
+                display: none;
+            }
+
+            & .nav-item{
+                height: 100%;
+                margin: 0;
+
+                & span{
+                    display: none;
+                }
+            }
+        }
+
+        @include laptop-desktops{
+            & .nav-item span{
+                display: block;
+            }
+        }
+    }
+
+    @include tablet-portrait{
+        padding: 20px 0;
+
+        & .logo-homeLink{
+            margin-left: 20px;
         }
     }
 }
