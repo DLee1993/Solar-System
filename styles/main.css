@@ -141,6 +141,7 @@ h5 {
 }
 
 .navbar {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,6 +156,32 @@ h5 {
 
 .navbar .logo-homeLink p {
   display: none;
+}
+
+.navbar .style-line {
+  position: absolute;
+  z-index: 1;
+  left: 140px;
+  display: none;
+  height: 1px;
+  background-color: #fff;
+  opacity: 0.3;
+}
+
+.navbar .style-line {
+  width: 330px;
+}
+
+@media screen and (min-width: 1100px) {
+  .navbar .style-line {
+    width: calc(42.46575vw - 137.12329px);
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .navbar .style-line {
+    width: 950px;
+  }
 }
 
 .navbar .hamburger-icon {
@@ -231,7 +258,7 @@ h5 {
   .navbar .nav-list {
     position: relative;
     width: 60vw;
-    height: 96px;
+    height: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -241,7 +268,6 @@ h5 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: auto;
   }
   .navbar .nav-list .close-icon {
     display: none;
@@ -263,10 +289,25 @@ h5 {
 
 @media screen and (min-width: 600px) {
   .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 20px 0;
   }
   .navbar .logo-homeLink {
     margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .navbar .style-line {
+    display: block;
   }
 }
 
@@ -286,7 +327,7 @@ h5 {
 body, html {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .home-page {
