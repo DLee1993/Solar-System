@@ -357,14 +357,14 @@ body, html {
   overflow-x: hidden;
 }
 
-.home-page {
+.home-page, .crew-page, .destinations-page, .technology-page {
   background: url("../assets/destination/background-destination-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 600px) {
-  .home-page {
+  .home-page, .crew-page, .destinations-page, .technology-page {
     background: url("../assets/home/background-home-tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -372,7 +372,7 @@ body, html {
 }
 
 @media screen and (min-width: 1100px) {
-  .home-page {
+  .home-page, .crew-page, .destinations-page, .technology-page {
     background: url("../assets/home/background-home-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;

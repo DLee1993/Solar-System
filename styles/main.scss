@@ -19,7 +19,10 @@ body, html{
     overflow-x: hidden;
 }
 
-.home-page{
+//!! You need to change the backgrounds of the other pages to a different background
+//!! CHECK FIGMA FOR REFERENCE
+
+.home-page, .crew-page, .destinations-page, .technology-page{
     background: url('../assets/destination/background-destination-mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
