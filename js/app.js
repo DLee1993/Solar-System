@@ -5,6 +5,7 @@ function dataLoop(planetName) {
     for (var destinations in data) {
         for (var planet in data[destinations]) {
             if (data[destinations][planet].name === planetName) {
+                //* Change the below .image to the class name of the planet img tag!!
                 document.querySelector(".image").src = data[destinations][planet].images.png;
             }
         }

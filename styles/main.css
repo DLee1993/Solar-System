@@ -243,7 +243,6 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50px;
   margin: 0 0 32px 0;
   color: #fff;
   text-decoration: none;
@@ -258,23 +257,6 @@ h5 {
 @media screen and (min-width: 600px) {
   .navbar .nav-list .nav-item span {
     margin: 0 10px 0 0;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .navbar .nav-list .nav-item::before {
-    -webkit-transition: 300ms;
-    transition: 300ms;
-    height: 3px;
-    width: 0;
-    bottom: 0;
-    left: 0;
-    content: "";
-    position: absolute;
-    background-color: #fff;
-  }
-  .navbar .nav-list .nav-item:hover::before {
-    width: 100%;
   }
 }
 
@@ -342,6 +324,30 @@ h5 {
   width: 50vw;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 600px) {
+  .hover::before {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    position: absolute;
+    background-color: #979797;
+  }
+  .hover:hover::before {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .active {
+    border-bottom: 3px solid white;
+    padding-top: 3px;
+  }
 }
 
 * {
