@@ -357,14 +357,14 @@ body, html {
   overflow-x: hidden;
 }
 
-.home-page, .crew-page, .destinations-page, .technology-page {
+.home-page {
   background: url("../assets/destination/background-destination-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 600px) {
-  .home-page, .crew-page, .destinations-page, .technology-page {
+  .home-page {
     background: url("../assets/home/background-home-tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -372,11 +372,76 @@ body, html {
 }
 
 @media screen and (min-width: 1100px) {
-  .home-page, .crew-page, .destinations-page, .technology-page {
+  .home-page {
     background: url("../assets/home/background-home-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
+  }
+}
+
+.destinations-page {
+  background: url("../assets/destination/background-destination-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 600px) {
+  .destinations-page {
+    background: url("../assets/destination/background-destination-tablet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .destinations-page {
+    background: url("../assets/destination/background-destination-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.crew-page {
+  background: url("../assets/crew/background-crew-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 600px) {
+  .crew-page {
+    background: url("../assets/crew/background-crew-tablet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .crew-page {
+    background: url("../assets/crew/background-crew-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.technology-page {
+  background: url("../assets/technology/background-technology-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 600px) {
+  .technology-page {
+    background: url("../assets/technology/background-technology-tablet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .technology-page {
+    background: url("../assets/technology/background-technology-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 /*# sourceMappingURL=main.css.map */

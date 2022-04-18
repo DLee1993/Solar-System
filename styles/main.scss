@@ -22,7 +22,7 @@ body, html{
 //!! You need to change the backgrounds of the other pages to a different background
 //!! CHECK FIGMA FOR REFERENCE
 
-.home-page, .crew-page, .destinations-page, .technology-page{
+.home-page{
     background: url('../assets/destination/background-destination-mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -37,6 +37,59 @@ body, html{
         background: url('../assets/home/background-home-desktop.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: right;
+    }
+}
+
+.destinations-page{
+    background: url('../assets/destination/background-destination-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include tablet-portrait{
+        background: url('../assets/destination/background-destination-tablet.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    @include laptop-desktops{
+        background: url('../assets/destination/background-destination-desktop.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.crew-page{
+    background: url('../assets/crew/background-crew-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include tablet-portrait{
+        background: url('../assets/crew/background-crew-tablet.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    @include laptop-desktops{
+        background: url('../assets/crew/background-crew-desktop.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.technology-page{
+    background: url('../assets/technology/background-technology-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include tablet-portrait{
+        background: url('../assets/technology/background-technology-tablet.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    @include laptop-desktops{
+        background: url('../assets/technology/background-technology-desktop.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
