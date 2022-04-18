@@ -22,7 +22,7 @@
         opacity: 0.3;
 
         //* Responsive width for the style line allows it to grow nad shrink based on screen size
-        @include fluidType(width, 1100px, 2560px, 330px, 950px);
+        @include fluidType(width, 1100px, 2560px, 330px, 1000px);
     }
 
     & .hamburger-icon {

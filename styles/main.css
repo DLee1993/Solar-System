@@ -140,7 +140,7 @@ h5 {
   font-size: 16px;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1700px) {
   .navText_styling {
     font-size: 22px;
   }
@@ -180,13 +180,13 @@ h5 {
 
 @media screen and (min-width: 1100px) {
   .navbar .style-line {
-    width: calc(42.46575vw - 137.12329px);
+    width: calc(45.89041vw - 174.79452px);
   }
 }
 
 @media screen and (min-width: 2560px) {
   .navbar .style-line {
-    width: 950px;
+    width: 1000px;
   }
 }
 
