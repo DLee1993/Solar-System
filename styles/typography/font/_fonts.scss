@@ -57,4 +57,8 @@ h5{
     letter-spacing: 2.7px;
     font-weight: 400;
     font-size: 16px;
+
+    @include laptop-desktops{
+        font-size: 22px;
+    }
 }

@@ -140,6 +140,12 @@ h5 {
   font-size: 16px;
 }
 
+@media screen and (min-width: 1100px) {
+  .navText_styling {
+    font-size: 22px;
+  }
+}
+
 .navbar {
   position: relative;
   display: -webkit-box;
