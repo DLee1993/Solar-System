@@ -9,7 +9,7 @@ const hamburger = document.querySelector(".hamburger-icon"),
     logo = document.querySelector(".logo-homeLink"),
     styleLine = document.querySelector(".style-line");
 
-let navOpen = false;
+let navOpen = false;   
 
 hamburger.addEventListener("click", () => {
     if (!navOpen) {
@@ -53,3 +53,7 @@ if (document.body.className) {
             break;
     }
 }
+
+document.addEventListener('resize', () => {
+    console.log('true')
+})

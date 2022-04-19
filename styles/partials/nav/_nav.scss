@@ -1,0 +1,137 @@
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+    & .logo-homeLink p {
+        display: none;
+    }
+
+    & .style-line {
+        display: none;
+
+        @include laptop-desktops {
+            display: block;
+            height: 1px;
+            background-color: colorSet(light-clr, white);
+            opacity: 0.3;
+            position: absolute; 
+            z-index: 1;
+            top: 50%;
+            left: 140px;
+
+            @include fluidType(width, 1100px, 2560px, 365px, 1100px)
+        }
+    }
+
+    & .hamburger-icon {
+        cursor: pointer;
+        @include tablet-portrait {
+            display: none;
+        }
+    }
+
+    & .nav-list {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0vw;
+        height: 100vh;
+        background: rgba(151, 151, 151, 0.04);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        list-style: none;
+        transition: all 0.5s ease-in-out;
+        overflow: hidden;
+
+        & .close-icon {
+            text-align: right;
+            padding: 28px 13px;
+            margin-bottom: 30px;
+            cursor: pointer;
+
+            & img {
+                width: 26px;
+            }
+
+            @include tablet-portrait{
+                display: none;
+            }
+        }
+
+        & a {
+            position: relative;
+            color: colorSet(light-clr, white);
+            text-decoration: none;
+            height: 100%;
+
+            & .nav-item {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                height: 50px;
+                font-weight: 400;
+                
+                & span{
+                    margin: 0 5px 0 20px;
+                    font-weight: bold;
+
+                    @include tablet-portrait{
+                        margin: 0 5px 0 0;
+                    }
+                }
+
+                @include tablet-portrait{
+                    height: 100%;
+                }
+            }
+        }
+
+        @include tablet-portrait{
+            position: relative;
+            width: 80vw;
+            height: 80px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        @include laptop-desktops{
+            width: 55vw;
+        }
+    }
+}
+
+.hover{
+    &::after{
+        transition: 300ms;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        background-color: colorSet(light-clr, grey);
+        height: 3px;
+        width: 0;
+    }
+
+    &:hover::after{
+        width: 100%;
+    }
+}
+
+.active{
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        background-color: #fff;
+        height: 3px;
+        width: 100%;
+    }
+}
+
+.nav-list.open {
+    width: 50vw;
+    transition: all 0.5s ease-in-out;
+}
