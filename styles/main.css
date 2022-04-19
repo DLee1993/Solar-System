@@ -175,12 +175,12 @@ h5 {
 }
 
 .navbar .style-line {
-  width: 330px;
+  width: 320px;
 }
 
 @media screen and (min-width: 1100px) {
   .navbar .style-line {
-    width: calc(45.89041vw - 174.79452px);
+    width: calc(46.57534vw - 192.32877px);
   }
 }
 
