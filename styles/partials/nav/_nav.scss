@@ -7,6 +7,7 @@
     padding: 20px 30px 0 30px;
 
     & .logo-homeLink {
+        opacity: 0;
         & p {
             display: none;
         }
@@ -15,7 +16,7 @@
     & .style-line {
         position: absolute;
         z-index: 1;
-        left: 140px;
+        left: -500px;
         display: none;
         height: 1px;
         background-color: colorSet(light-clr, white);
@@ -68,7 +69,9 @@
         }
 
         & .nav-item {
+            opacity: 0;
             position: relative;
+            top: 10px;
             display: flex;
             justify-content: start;
             align-items: center;
@@ -92,10 +95,11 @@
         @include tablet-portrait {
             position: relative;
             width: 70vw;
-            height: 80px;
+            height: 0px;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            overflow: hidden;
 
             & .close-icon {
                 display: none;
