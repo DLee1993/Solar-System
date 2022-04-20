@@ -52,8 +52,11 @@ if (document.body.className) {
             home.classList.add("hover");
             break;
     }
-}
+}; 
 
-document.addEventListener('resize', () => {
-    console.log('true')
+window.addEventListener('resize', () => {
+    if(window.screen.width > 600){
+        navList.classList.remove('open')
+        navOpen = false;
+    }
 })
