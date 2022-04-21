@@ -5,28 +5,35 @@
     align-items: center;
     padding: 15px;
 
-    & .logo-homeLink p {
-        display: none;
+    & .logo-homeLink {
+        opacity: 0;
+        transform: translateX(-50px);
+        & p {
+            display: none;
+        }
     }
 
     & .style-line {
         display: none;
 
         @include laptop-desktops {
+            transform: translateX(-200px);
             display: block;
             height: 1px;
-            background-color: colorSet(light-clr, white);
-            opacity: 0.3;
-            position: absolute; 
+            background-color: colorSet(light-clr, grey);
+            opacity: 0;
+            position: absolute;
             z-index: 1;
             top: 50%;
-            left: 140px;
+            left: 120px;
 
-            @include fluidType(width, 1100px, 2560px, 365px, 1100px)
+            @include fluidType(width, 1100px, 2560px, 365px, 1100px);
         }
     }
 
     & .hamburger-icon {
+        opacity: 0;
+        transform: translateY(-30px);
         cursor: pointer;
         @include tablet-portrait {
             display: none;
@@ -56,7 +63,7 @@
                 width: 26px;
             }
 
-            @include tablet-portrait{
+            @include tablet-portrait {
                 display: none;
             }
         }
@@ -73,23 +80,24 @@
                 align-items: center;
                 height: 50px;
                 font-weight: 400;
-                
-                & span{
+
+                & span {
                     margin: 0 5px 0 20px;
                     font-weight: bold;
 
-                    @include tablet-portrait{
+                    @include tablet-portrait {
                         margin: 0 5px 0 0;
                     }
                 }
 
-                @include tablet-portrait{
+                @include tablet-portrait {
                     height: 100%;
                 }
             }
         }
 
-        @include tablet-portrait{
+        @include tablet-portrait {
+            opacity: 0;
             position: relative;
             width: 80vw;
             height: 80px;
@@ -98,16 +106,16 @@
             align-items: center;
         }
 
-        @include laptop-desktops{
+        @include laptop-desktops {
             width: 55vw;
         }
     }
 }
 
-.hover{
-    &::after{
+.hover {
+    &::after {
         transition: 300ms;
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         background-color: colorSet(light-clr, grey);
@@ -115,14 +123,14 @@
         width: 0;
     }
 
-    &:hover::after{
+    &:hover::after {
         width: 100%;
     }
 }
 
-.active{
-    &::after{
-        content: '';
+.active {
+    &::after {
+        content: "";
         position: absolute;
         bottom: 0;
         background-color: #fff;
