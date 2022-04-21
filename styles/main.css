@@ -254,6 +254,9 @@ h5 {
   color: #fff;
   text-decoration: none;
   height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .navbar .nav-list a .nav-item {
@@ -267,11 +270,15 @@ h5 {
       -ms-flex-align: center;
           align-items: center;
   height: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-weight: 400;
+  margin-left: 20px;
 }
 
 .navbar .nav-list a .nav-item span {
-  margin: 0 5px 0 20px;
+  margin-right: 5px;
   font-weight: bold;
 }
 
@@ -287,6 +294,7 @@ h5 {
     opacity: 0;
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
+    margin-left: 0;
   }
 }
 

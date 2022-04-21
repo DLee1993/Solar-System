@@ -10,14 +10,16 @@ var timeScale = tl.timeScale(1.2)
 const runMobileAnim = () => {
     tl.to(logoIcon, { x: 0, opacity: 1 });
     tl.to(menuIcon, { y: 0, opacity: 1 }, "-=0.5");
+    console.log('mobile animation')
 };
 
 const runTabletAnim = () => {
     tl.to(logoIcon, { x: 0, opacity: 1 });
-    tl.to(navItemList, { opacity: 1 });
+    tl.to(navItemList, { opacity: 1 }, '-=1');
     navItem.forEach((item) => {
         tl.to(item, { y: 0, opacity: 1 });
     });
+    console.log('tablet animation')
 };
 
 const runDesktopAnim = () => {
@@ -27,7 +29,7 @@ const runDesktopAnim = () => {
     navItem.forEach((item) => {
         tl.to(item, { y: 0, opacity: 1 });
     });
-    console.log(tl.totalDuration());
+    console.log('desktop animation')
 };
 
 const ready = () => {

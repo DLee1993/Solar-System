@@ -73,16 +73,19 @@
             color: colorSet(light-clr, white);
             text-decoration: none;
             height: 100%;
+            width: fit-content;
 
             & .nav-item {
                 display: flex;
                 justify-content: start;
                 align-items: center;
                 height: 50px;
+                width: fit-content;
                 font-weight: 400;
+                margin-left: 20px;
 
                 & span {
-                    margin: 0 5px 0 20px;
+                    margin-right: 5px;
                     font-weight: bold;
 
                     @include tablet-portrait {
@@ -94,6 +97,7 @@
                     height: 100%;
                     opacity: 0;
                     transform: translateY(10px);
+                    margin-left: 0;
                 }
             }
         }
