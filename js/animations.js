@@ -5,28 +5,26 @@ const logoIcon = document.querySelector(".logo-homeLink"),
     navItem = navItemList.querySelectorAll(".nav-item");
 
 var tl = gsap.timeline();
-var timeScale = tl.timeScale(1.2)
 
 const runMobileAnim = () => {
     tl.to(logoIcon, { x: 0, opacity: 1 });
-    tl.to(menuIcon, { y: 0, opacity: 1 }, "-=0.5");
-    console.log('mobile animation')
+    tl.to(menuIcon, { y: 0, opacity: 1 });
 };
 
 const runTabletAnim = () => {
     tl.to(logoIcon, { x: 0, opacity: 1 });
     tl.to(navItemList, { opacity: 1 }, '-=1');
     navItem.forEach((item) => {
-        tl.to(item, { y: 0, opacity: 1 });
+        tl.to(item, { y: 0, opacity: 1 }, '-=0.3');
     });
 };
 
 const runDesktopAnim = () => {
     tl.to(logoIcon, { x: 0, opacity: 1 });
-    tl.to(designLine, { x: 0, opacity: 1 }, "-=3");
-    tl.to(navItemList, { opacity: 1 });
+    tl.to(designLine, { x: 0, opacity: 1 });
+    tl.to(navItemList, { opacity: 1 }, '-=0.8');
     navItem.forEach((item) => {
-        tl.to(item, { y: 0, opacity: 1 });
+        tl.to(item, { y: 0, opacity: 1, duration: 0.3 }, '-=0.2');
     });
 };
 
@@ -35,7 +33,7 @@ const ready = () => {
         "(max-width: 600px)": () => {
             runMobileAnim();
         },
-        "(min-width: 601px)": () => {
+        "(min-width: 601px) and (max-width: 1099px)": () => {
             runTabletAnim();
         },
         "(min-width: 1100px)": () => {

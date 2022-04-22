@@ -3,13 +3,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 25px;
 
     & .logo-homeLink {
         opacity: 0;
         transform: translateX(-50px);
         & p {
             display: none;
+        }
+
+        & img {
+            width: 30px;
+            transition: all .5s ease-in-out;
+
+            @include tablet-portrait{
+                width: 50px;
+                transition: all .5s ease-in-out;
+            }
         }
     }
 
@@ -27,7 +37,7 @@
             top: 50%;
             left: 120px;
 
-            @include fluidType(width, 1100px, 2560px, 365px, 1100px);
+            @include fluidType(width, 1100px, 2560px, 385px, 1100px);
         }
     }
 
@@ -115,6 +125,14 @@
         @include laptop-desktops {
             width: 55vw;
         }
+    }
+
+    @include tablet-portrait{
+        padding: 0px 0 15px 15px;
+    }
+
+    @include laptop-desktops{
+        padding: 15px 0 15px 15px;
     }
 }
 
