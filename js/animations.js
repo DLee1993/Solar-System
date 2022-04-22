@@ -19,7 +19,6 @@ const runTabletAnim = () => {
     navItem.forEach((item) => {
         tl.to(item, { y: 0, opacity: 1 });
     });
-    console.log('tablet animation')
 };
 
 const runDesktopAnim = () => {
@@ -29,7 +28,6 @@ const runDesktopAnim = () => {
     navItem.forEach((item) => {
         tl.to(item, { y: 0, opacity: 1 });
     });
-    console.log('desktop animation')
 };
 
 const ready = () => {
