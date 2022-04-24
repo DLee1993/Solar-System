@@ -171,7 +171,7 @@ h5 {
 }
 
 .navbar .logo-homeLink img {
-  width: 30px;
+  width: 40px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
@@ -222,6 +222,7 @@ h5 {
   opacity: 0;
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
+  width: 30px;
   cursor: pointer;
 }
 

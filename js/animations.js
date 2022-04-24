@@ -8,14 +8,14 @@ var tl = gsap.timeline();
 
 const runMobileAnim = () => {
     tl.to(logoIcon, { x: 0, opacity: 1 });
-    tl.to(menuIcon, { y: 0, opacity: 1 });
+    tl.to(menuIcon, { y: 0, opacity: 1 }, '-=0.5');
 };
 
 const runTabletAnim = () => {
     tl.to(logoIcon, { x: 0, opacity: 1 });
-    tl.to(navItemList, { opacity: 1 }, '-=1');
+    tl.to(navItemList, { opacity: 1 }, '-=0.8');
     navItem.forEach((item) => {
-        tl.to(item, { y: 0, opacity: 1 }, '-=0.3');
+        tl.to(item, { y: 0, opacity: 1, duration: 0.3 }, '-=0.2');
     });
 };
 

@@ -13,7 +13,7 @@
         }
 
         & img {
-            width: 30px;
+            width: 40px;
             transition: all .5s ease-in-out;
 
             @include tablet-portrait{
@@ -44,6 +44,7 @@
     & .hamburger-icon {
         opacity: 0;
         transform: translateY(-30px);
+        width: 30px;
         cursor: pointer;
         @include tablet-portrait {
             display: none;
