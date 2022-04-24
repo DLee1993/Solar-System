@@ -1,5 +1,5 @@
 const hamburger = document.querySelector(".hamburger-icon"),
-    closeIcon = document.querySelector(".close-icon"),
+    closeIcon = document.querySelector(".close-icon img"),
     navList = document.querySelector(".nav-list"),
     navItems = document.querySelectorAll(".nav-item"),
     home = document.querySelector(".home"),

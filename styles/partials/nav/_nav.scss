@@ -44,7 +44,7 @@
     & .hamburger-icon {
         opacity: 0;
         transform: translateY(-30px);
-        width: 30px;
+        width: 24px;
         cursor: pointer;
         @include tablet-portrait {
             display: none;
@@ -66,9 +66,10 @@
 
         & .close-icon {
             text-align: right;
-            padding: 28px 13px;
+            padding: 28px 20px;
             margin-bottom: 30px;
             cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
 
             & img {
                 width: 26px;
@@ -93,7 +94,7 @@
                 height: 50px;
                 width: fit-content;
                 font-weight: 400;
-                margin-left: 20px;
+                margin: 10px 0 30px 20px;
 
                 & span {
                     margin-right: 5px;
@@ -108,7 +109,7 @@
                     height: 100%;
                     opacity: 0;
                     transform: translateY(10px);
-                    margin-left: 0;
+                    margin: 0;
                 }
             }
         }

@@ -222,7 +222,7 @@ h5 {
   opacity: 0;
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
-  width: 30px;
+  width: 24px;
   cursor: pointer;
 }
 
@@ -249,9 +249,10 @@ h5 {
 
 .navbar .nav-list .close-icon {
   text-align: right;
-  padding: 28px 13px;
+  padding: 28px 20px;
   margin-bottom: 30px;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .navbar .nav-list .close-icon img {
@@ -289,7 +290,7 @@ h5 {
   width: -moz-fit-content;
   width: fit-content;
   font-weight: 400;
-  margin-left: 20px;
+  margin: 10px 0 30px 20px;
 }
 
 .navbar .nav-list a .nav-item span {
@@ -309,7 +310,7 @@ h5 {
     opacity: 0;
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
-    margin-left: 0;
+    margin: 0;
   }
 }
 
