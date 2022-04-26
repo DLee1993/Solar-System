@@ -9,8 +9,8 @@ $secondary-font: 'Barlow Condensed', sans-serif;
 
 body{
     font-family: $secondary-font;
-    font-size: 18px;
     color: colorSet(light-clr, white);
+    @include fluidType(font-size, 320px, 2560px, 18px, 28px)
 }
 
 h1, h2, h3, h4{
@@ -22,7 +22,7 @@ h1, h2, h3, h4{
 //* Individual styling based on font size
 
 h1{
-    @include fluidType(font-size, 320px, 2560px, 80px, 180px)
+    @include fluidType(font-size, 320px, 2560px, 80px, 250px)
 }
 
 h2{
@@ -39,7 +39,7 @@ h4{
 
 h5{
     font-family: $secondary-font;
-    letter-spacing: 4.7px;
+    @include fluidType(letter-spacing, 320px, 2560px, 2.7px, 4.7px);
     @include fluidType(font-size, 320px, 2560px, 16px, 35px)
 }
 
@@ -61,4 +61,24 @@ h5{
     @include large-desktops{
         font-size: 22px;
     }
+}
+
+.explore-cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    font-family: $primary-font;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: colorSet(light-clr, white);
+    color: colorSet(dark-clr, black);
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+
+    @include fluidType(height, 320px, 2560px, 150px, 350px);
+    @include fluidType(width, 320px, 2560px, 150px, 350px);
+    @include fluidType(font-size, 320px, 1440px, 20px, 32px);
+    @include fluidType(letter-spacing, 320px, 1440px, 1.25px, 2px);
 }
