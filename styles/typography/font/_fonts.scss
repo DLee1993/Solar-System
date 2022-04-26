@@ -22,7 +22,7 @@ h1, h2, h3, h4{
 //* Individual styling based on font size
 
 h1{
-    @include fluidType(font-size, 320px, 2560px, 80px, 250px)
+    @include fluidType(font-size, 320px, 2560px, 80px, 200px)
 }
 
 h2{
