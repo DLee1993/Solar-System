@@ -509,7 +509,7 @@ h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 70vh;
+  height: 68vh;
   margin-top: 80px;
 }
 
@@ -615,7 +615,7 @@ body, html {
 }
 
 .home-page {
-  background: url("../assets/destination/background-destination-mobile.jpg");
+  background: url("../assets/home/background-home-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
