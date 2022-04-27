@@ -20,8 +20,16 @@ body, html{
     background-color: black;
 }
 
-//!! You need to change the backgrounds of the other pages to a different background
-//!! CHECK FIGMA FOR REFERENCE
+.main-content{
+    width: 100%;
+    height: calc(100% - 95px);
+    background-color: red;
+
+    @include laptop-desktops{
+        height: calc(100% - 110px);
+    }
+}
+
 
 .home-page{
     background: url('../assets/home/background-home-mobile.jpg');
