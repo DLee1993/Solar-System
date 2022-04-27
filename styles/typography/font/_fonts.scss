@@ -69,6 +69,7 @@ h5{
     align-items: center;
     border-radius: 50%;
     border: none;
+    overflow: hidden;
     font-family: $primary-font;
     text-transform: uppercase;
     cursor: pointer;
@@ -76,9 +77,13 @@ h5{
     color: colorSet(dark-clr, black);
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
-
-    @include fluidType(height, 320px, 2560px, 150px, 350px);
-    @include fluidType(width, 320px, 2560px, 150px, 350px);
     @include fluidType(font-size, 320px, 1440px, 20px, 32px);
     @include fluidType(letter-spacing, 320px, 1440px, 1.25px, 2px);
+    outline: 0px solid rgba(255, 255, 255, 0.258);
+
+    &:hover{
+        cursor: pointer;
+        outline: 50px solid rgba(255, 255, 255, 0.258);
+        transition: all .5s ease-in-out;
+    }
 }

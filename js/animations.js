@@ -8,23 +8,51 @@ var tl = gsap.timeline();
 
 const runMobileAnim = () => {
     tl.to(logoIcon, { x: 0, opacity: 1 });
-    tl.to(menuIcon, { y: 0, opacity: 1 }, '-=0.5');
+    tl.to(menuIcon, { y: 0, opacity: 1 }, "-=0.5");
+    // tl.fromTo(
+    //     supHeading,
+    //     { y: 20, opacity: 0 },
+    //     { y: 0, opacity: 1, duration: 0.5 }
+    // );
+    // tl.fromTo(
+    //     heading,
+    //     { y: 20, opacity: 0 },
+    //     { y: 0, opacity: 1, duration: 0.5 },
+    //     "-=0.1"
+    // );
+    // tl.fromTo(
+    //     subHeading,
+    //     { y: 20, opacity: 0 },
+    //     { y: 0, opacity: 1, duration: 0.5 },
+    //     "-=0.1"
+    // );
+    // tl.fromTo(
+    //     exploreCTA,
+    //     { width: 0, height: 0 },
+    //     {
+    //         width: "35.2vh",
+    //         height: "35.2vh",
+    //         ease: "back.inOut(1.7)",
+    //         duration: 1.5,
+    //     },
+    //     "-=0.6"
+    // );
 };
 
 const runTabletAnim = () => {
     tl.to(logoIcon, { x: 0, opacity: 1 });
-    tl.to(navItemList, { opacity: 1 }, '-=0.8');
+    tl.to(navItemList, { opacity: 1 }, "-=0.8");
     navItem.forEach((item) => {
-        tl.to(item, { y: 0, opacity: 1, duration: 0.3 }, '-=0.2');
+        tl.to(item, { y: 0, opacity: 1, duration: 0.3 }, "-=0.2");
     });
 };
 
 const runDesktopAnim = () => {
     tl.to(logoIcon, { x: 0, opacity: 1 });
     tl.to(designLine, { x: 0, opacity: 1 });
-    tl.to(navItemList, { opacity: 1 }, '-=0.8');
+    tl.to(navItemList, { opacity: 1 }, "-=0.8");
     navItem.forEach((item) => {
-        tl.to(item, { y: 0, opacity: 1, duration: 0.3 }, '-=0.2');
+        tl.to(item, { y: 0, opacity: 1, duration: 0.3 }, "-=0.2");
     });
 };
 
@@ -46,4 +74,5 @@ if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", ready);
 } else {
     ready();
+    console.log("ready");
 }
