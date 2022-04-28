@@ -7,7 +7,6 @@
     flex-direction: column;
 
     @include laptop-desktops{
-        min-height: 100%;
         flex-direction: row;
     }
 

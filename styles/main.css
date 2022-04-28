@@ -507,7 +507,6 @@ h5 {
 
 @media screen and (min-width: 1100px) {
   .welcome-section {
-    min-height: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
