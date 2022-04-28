@@ -1,0 +1,44 @@
+.welcome-section{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    @include tablet-portrait{
+        min-height: 110vh;
+    }
+
+    @include laptop-desktops{
+        min-height: 100%;
+        flex-direction: row;
+    }
+
+    & .welcome-text{
+        width: auto;
+        max-width: 327px;
+        text-align: center;
+
+        @include tablet-portrait{
+            max-width: 444px;
+        }
+
+        @include laptop-desktops{
+            text-align: left;
+        }
+
+        & .supheading{
+            text-transform: uppercase;
+            font-weight: 400;
+            color: colorSet(light-clr, pale-purple);
+        }
+
+        & .subheading{
+            font-weight: 400;
+            line-height: 32px;
+            color: colorSet(light-clr, pale-purple);
+        }
+    }
+}

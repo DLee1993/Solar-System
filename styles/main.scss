@@ -23,7 +23,6 @@ body, html{
 .main-content{
     width: 100%;
     height: calc(100% - 95px);
-    background-color: red;
 
     @include laptop-desktops{
         height: calc(100% - 110px);

@@ -67,6 +67,8 @@ h5{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: none;
     overflow: hidden;
@@ -85,5 +87,15 @@ h5{
         cursor: pointer;
         outline: 50px solid rgba(255, 255, 255, 0.258);
         transition: all .5s ease-in-out;
+    }
+
+    @include tablet-portrait{
+        width: 242px;
+        height: 242px;
+    }
+
+    @include laptop-desktops{
+        width: 274px;
+        height: 274px;
     }
 }
