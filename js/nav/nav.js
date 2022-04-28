@@ -7,7 +7,8 @@ const hamburger = document.querySelector(".hamburger-icon"),
     crew = document.querySelector(".crew"),
     technology = document.querySelector(".technology"),
     logo = document.querySelector(".logo-homeLink"),
-    styleLine = document.querySelector(".style-line");
+    styleLine = document.querySelector(".style-line"),
+    mainContent = document.querySelector('.main-content'); 
 
 let navOpen = false;   
 
@@ -56,6 +57,13 @@ if (document.body.className) {
 
 window.addEventListener('resize', () => {
     if(window.screen.width > 600){
+        navList.classList.remove('open')
+        navOpen = false;
+    }
+})
+
+mainContent.addEventListener('click', () => {
+    if(navList.classList.contains('open')){
         navList.classList.remove('open')
         navOpen = false;
     }

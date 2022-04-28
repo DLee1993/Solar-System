@@ -1,15 +1,10 @@
 .welcome-section{
     width: 100%;
     height: auto;
-    min-height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-
-    @include tablet-portrait{
-        min-height: 110vh;
-    }
 
     @include laptop-desktops{
         min-height: 100%;
@@ -20,6 +15,7 @@
         width: auto;
         max-width: 327px;
         text-align: center;
+        margin: 100px 0;
 
         @include tablet-portrait{
             max-width: 444px;
