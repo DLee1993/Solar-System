@@ -491,7 +491,7 @@ h5 {
 .welcome-section {
   width: 100%;
   height: auto;
-  min-height: 100vh;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
