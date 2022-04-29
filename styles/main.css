@@ -198,7 +198,6 @@ h5 {
   color: #0B0D17;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
-  outline: 0px solid rgba(255, 255, 255, 0.258);
 }
 
 .explore-cta {
@@ -231,13 +230,6 @@ h5 {
   .explore-cta {
     letter-spacing: 2px;
   }
-}
-
-.explore-cta:hover {
-  cursor: pointer;
-  outline: 50px solid rgba(255, 255, 255, 0.258);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
 }
 
 @media screen and (min-width: 600px) {
