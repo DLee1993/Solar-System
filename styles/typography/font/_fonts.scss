@@ -13,7 +13,7 @@ body{
     @include fluidType(font-size, 320px, 2560px, 18px, 28px)
 }
 
-h1, h2, h3, h4{
+h1, h2, h3{
     font-family: $primary-font;
     text-transform: uppercase;
     font-weight: 400;
