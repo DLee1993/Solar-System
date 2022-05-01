@@ -3,7 +3,7 @@
     {
       "name": "Sun", 
       "images": {
-        "png":"../assets/destination/Neptune-removebg-preview.png"
+        "png":"../assets/destination/Sun-removebg-preview.png"
       }, 
       "description": "Our Sun is a 4.5 billion-year-old star - a hot glowing ball of hydrogen and helium at the center of our solar system. Without its energy, life as we know it could not exist here on our home planet.",
       "distance": "152 mil. km",
@@ -12,7 +12,7 @@
     {
       "name": "Mercury", 
       "images": {
-        "png":"../assets/destination/Mercury.jpg"
+        "png":"../assets/destination/Mercury-removebg-preview.png"
       }, 
       "description": "The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon. From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as seven times brighter.",
       "distance": "216 mil. km",
@@ -21,7 +21,7 @@
     {
       "name": "Venus", 
       "images": {
-        "png":"../assets/destination/Venus.png"
+        "png":"../assets/destination/Venus-removebg-preview.png"
       }, 
       "description": "Venus is the second planet from the Sun and is Earth's closest planetary neighbor. It's one of the four inner, terrestrial (or rocky) planets, and it's often called Earth's twin because it's similar in size and density. These are not identical twins, however - there are radical differences between the two worlds.",
       "distance": "259 mil. km",
@@ -47,7 +47,7 @@
     {
       "name": "Mars",
       "images": {
-        "png": "./assets/destination/image-mars.png",
+        "png": "../assets/destination/image-mars.png",
         "webp": "./assets/destination/image-mars.webp"
       },
       "description": "Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It's two and a half times the size of Everest!",
@@ -57,7 +57,7 @@
     {
       "name": "Jupiter",
       "images": {
-        "png": "./assets/destination/Jupiter-removebg-preview.png"
+        "png": "../assets/destination/Jupiter-removebg-preview.png"
       },
       "description": "Jupiter has a long history of surprising scientists - all the way back to 1610 when Galileo Galilei found the first moons beyond Earth. That discovery changed the way we see the universe.",
       "distance": "965 mil. km",
@@ -66,7 +66,7 @@
     {
       "name": "Saturn",
       "images": {
-        "png": "./assets/destination/Saturn.png"
+        "png": "../assets/destination/Saturn.png"
       },
       "description": "Jupiter has a long history of surprising scientists - all the way back to 1610 when Galileo Galilei found the first moons beyond Earth. That discovery changed the way we see the universe.",
       "distance": "1.6 bil. km",
@@ -75,7 +75,7 @@
     {
       "name": "Uranus",
       "images": {
-        "png": "./assets/destination/Uranus.jpg"
+        "png": "../assets/destination/Uranus-removebg-preview.png"
       },
       "description": "Jupiter has a long history of surprising scientists - all the way back to 1610 when Galileo Galilei found the first moons beyond Earth. That discovery changed the way we see the universe.",
       "distance": "3.1 bil. km",
@@ -84,7 +84,7 @@
     {
       "name": "Neptune",
       "images": {
-        "png": "./assets/destination/Neptune.jpg"
+        "png": "../assets/destination/Neptune-removebg-preview.png"
       },
       "description": "Jupiter has a long history of surprising scientists - all the way back to 1610 when Galileo Galilei found the first moons beyond Earth. That discovery changed the way we see the universe.",
       "distance": "4.6 bil. km",
@@ -93,8 +93,8 @@
     {
       "name": "Europa",
       "images": {
-        "png": "./assets/destination/image-europa.png",
-        "webp": "./assets/destination/image-europa.webp"
+        "png": "../assets/destination/image-europa.png",
+        "webp": "../assets/destination/image-europa.webp"
       },
       "description": "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover's dream. With an icy surface, it's perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
       "distance": "628 mil. km",
@@ -103,7 +103,7 @@
     {
       "name": "Titan",
       "images": {
-        "png": "./assets/destination/image-titan.png",
+        "png": "../assets/destination/image-titan.png",
         "webp": "./assets/destination/image-titan.webp"
       },
       "description": "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
@@ -115,7 +115,7 @@
     {
       "name": "Douglas Hurley",
       "images": {
-        "png": "./assets/crew/image-douglas-hurley.png",
+        "png": "../assets/crew/image-douglas-hurley.png",
         "webp": "./assets/crew/image-douglas-hurley.webp"
       },
       "role": "Commander",
@@ -124,7 +124,7 @@
     {
       "name": "Mark Shuttleworth",
       "images": {
-        "png": "./assets/crew/image-mark-shuttleworth.png",
+        "png": "../assets/crew/image-mark-shuttleworth.png",
         "webp": "./assets/crew/image-mark-shuttleworth.webp"
       },
       "role": "Mission Specialist",
@@ -133,7 +133,7 @@
     {
       "name": "Victor Glover",
       "images": {
-        "png": "./assets/crew/image-victor-glover.png",
+        "png": "../assets/crew/image-victor-glover.png",
         "webp": "./assets/crew/image-victor-glover.webp"
       },
       "role": "Pilot",
@@ -142,7 +142,7 @@
     {
       "name": "Anousheh Ansari",
       "images": {
-        "png": "./assets/crew/image-anousheh-ansari.png",
+        "png": "../assets/crew/image-anousheh-ansari.png",
         "webp": "./assets/crew/image-anousheh-ansari.webp"
       },
       "role": "Flight Engineer",
@@ -153,7 +153,7 @@
     {
       "name": "Launch vehicle",
       "images": {
-        "portrait": "./assets/technology/image-launch-vehicle-portrait.jpg",
+        "portrait": "../assets/technology/image-launch-vehicle-portrait.jpg",
         "landscape": "./assets/technology/image-launch-vehicle-landscape.jpg"
       },
       "description": "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"
@@ -161,7 +161,7 @@
     {
       "name": "Spaceport",
       "images": {
-        "portrait": "./assets/technology/image-spaceport-portrait.jpg",
+        "portrait": "../assets/technology/image-spaceport-portrait.jpg",
         "landscape": "./assets/technology/image-spaceport-landscape.jpg"
       },
       "description": "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth's rotation for launch."
@@ -169,7 +169,7 @@
     {
       "name": "Space capsule",
       "images": {
-        "portrait": "./assets/technology/image-space-capsule-portrait.jpg",
+        "portrait": "../assets/technology/image-space-capsule-portrait.jpg",
         "landscape": "./assets/technology/image-space-capsule-landscape.jpg"
       },
       "description": "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained."
