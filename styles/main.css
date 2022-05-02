@@ -532,6 +532,12 @@ h5 {
   color: #D0D6F9;
 }
 
+@media screen and (min-width: 1100px) {
+  .welcome-section .welcome-text .heading {
+    margin-left: -10px;
+  }
+}
+
 .welcome-section .welcome-text .subheading {
   font-weight: 400;
   line-height: 32px;
