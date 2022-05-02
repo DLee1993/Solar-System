@@ -5,8 +5,8 @@ const supheading = document.querySelector(".supheading"),
     indexTL = gsap.timeline({delay: 0.4, ease: 'power2.out'});
 
 indexTL.fromTo(supheading, {y: 20, opacity: 0}, {y: 0, opacity: 1});
-indexTL.fromTo(heading, {y: 20, opacity: 0}, {y: 0, opacity: 1}, '-=0.15');
-indexTL.fromTo(subheading, {y: 20, opacity: 0}, {y: 0, opacity: 1}, '-=0.3');
+indexTL.fromTo(heading, {y: 20, opacity: 0}, {y: 0, opacity: 1});
+indexTL.fromTo(subheading, {y: 20, opacity: 0}, {y: 0, opacity: 1}, '-=0.5');
 
 ScrollTrigger.matchMedia({
     "(max-width: 600px)": () => {
