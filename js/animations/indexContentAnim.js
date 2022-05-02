@@ -4,19 +4,19 @@ const supheading = document.querySelector(".supheading"),
     exploreCTA = document.querySelector('.explore-cta'),
     indexTL = gsap.timeline({delay: 0.4, ease: 'power2.out'});
 
-indexTL.fromTo(supheading, {y: 20, opacity: 0}, {y: 0, opacity: 1});
-indexTL.fromTo(heading, {y: 20, opacity: 0}, {y: 0, opacity: 1}, '-=0.5');
-indexTL.fromTo(subheading, {y: 20, opacity: 0}, {y: 0, opacity: 1}, '-=0.5');
+indexTL.to(supheading, {y: 0, opacity: 1});
+indexTL.to(heading, {y: 0, opacity: 1}, '-=0.5');
+indexTL.to(subheading, {y: 0, opacity: 1}, '-=0.5');
 
 ScrollTrigger.matchMedia({
     "(max-width: 600px)": () => {
-        indexTL.fromTo(exploreCTA, {width: 0, height: 0}, {width: '150px', height: '150px', ease: 'back.inOut(1.7)', duration: 0.8})
+        indexTL.to(exploreCTA, {width: '150px', height: '150px', ease: 'back.inOut(1.7)', duration: 0.8})
     },
     "(min-width: 601px) and (max-width: 1099px)": () => {
-        indexTL.fromTo(exploreCTA, {width: 0, height: 0}, {width: '242px', height: '242px', ease: 'back.inOut(1.7)', duration: 1.2})
+        indexTL.to(exploreCTA, {width: '242px', height: '242px', ease: 'back.inOut(1.7)', duration: 1.2})
     },
     "(min-width: 1100px)": () => {
-        indexTL.fromTo(exploreCTA, {width: 0, height: 0}, {width: '274px', height: '274px', ease: 'back.inOut(1.7)', duration: 1.2}, '-=0.5')
+        indexTL.to(exploreCTA, {width: '274px', height: '274px', ease: 'back.inOut(1.7)', duration: 1.2}, '-=0.5')
     },
 });
 

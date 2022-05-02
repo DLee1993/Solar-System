@@ -26,18 +26,24 @@
         }
 
         & .supheading{
+            transform: translateY(20px);
+            opacity: 0;
             text-transform: uppercase;
             font-weight: 400;
             color: colorSet(light-clr, pale-purple);
         }
 
         & .heading{
+            transform: translateY(20px);
+            opacity: 0;
             @include laptop-desktops{
                 margin-left: -10px;
             }
         }
 
         & .subheading{
+            transform: translateY(20px);
+            opacity: 0;
             font-weight: 400;
             line-height: 32px;
             color: colorSet(light-clr, pale-purple);
