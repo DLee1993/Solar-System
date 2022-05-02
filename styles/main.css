@@ -549,6 +549,9 @@ h5 {
 }
 
 .planet-content .page-title {
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
   padding: 25px 0 0 40px;
   letter-spacing: 4.7px;
   font-weight: 400;
@@ -610,6 +613,10 @@ h5 {
     height: 100%;
     margin: 0;
   }
+}
+
+.planet-content .flex-container .planetImg-container .planet-image {
+  height: 0;
 }
 
 .planet-content .flex-container .planet-text {
