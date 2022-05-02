@@ -1,4 +1,4 @@
-const planetsTL = gsap.timeline({delay: 1.5}),
+const planetsTL = gsap.timeline({delay: 1.2}),
     planetImage = document.querySelector(".planet-image"), 
     pageTitle = document.querySelector('.page-title');
 
