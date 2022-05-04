@@ -60,6 +60,13 @@
                 height: 100%;
             }
 
+            & .planet-list{
+                list-style: none;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
             & p {
                 width: 100%;
                 max-width: 327px;
