@@ -2,7 +2,7 @@ const supheading = document.querySelector(".supheading"),
     heading = document.querySelector(".heading"),
     subheading = document.querySelector(".subheading"), 
     exploreCTA = document.querySelector('.explore-cta'),
-    indexTL = gsap.timeline({delay: 0.4, ease: 'power2.out'});
+    indexTL = gsap.timeline({delay: 1.2, ease: 'power2.out'});
 
 indexTL.to(supheading, {y: 0, opacity: 1});
 indexTL.to(heading, {y: 0, opacity: 1}, '-=0.5');
