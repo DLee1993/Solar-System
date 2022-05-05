@@ -11,12 +11,14 @@ planetsTL.to(
 );
 
 planetItems.forEach((planet) => {
+    planet.classList.add('hover');
     planet.addEventListener("click", (e) => {
         if (planet.classList.contains("active-planet")) {
             planet.classList.remove("active-planet");
         } else {
             planetItems.forEach((item) => {
                 item.classList.remove("active-planet");
+                item.classList.add('hover')
             });
             planet.classList.add("active-planet");
             planetsTL.fromTo(
@@ -27,25 +29,3 @@ planetItems.forEach((planet) => {
         }
     });
 });
-
-// switch (e.target) {
-//     case earth:
-//         earth.classList.add("active-planet");
-//         moon.classList.remove("active-planet");
-//         mars.classList.remove("active-planet");
-//         europa.classList.remove("active-planet");
-//         titan.classList.remove("active-planet");
-//         break;
-//     case moon:
-//         moon.classList.add("active-planet");
-//         break;
-//     case mars:
-//         mars.classList.add("active-planet");
-//         break;
-//     case europa:
-//         europa.classList.add("active-planet");
-//         break;
-//     case titan:
-//         titan.classList.add("active-planet");
-//         break;
-// }

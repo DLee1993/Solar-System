@@ -441,6 +441,7 @@ h5 {
   transition: 300ms;
   content: "";
   position: absolute;
+  left: 0;
   bottom: 0;
   background-color: #979797;
   height: 3px;
