@@ -1,33 +1,6 @@
 {
   "destinations": [
     {
-      "name": "Sun", 
-      "images": {
-        "png":"../assets/destination/Sun-removebg-preview.png"
-      }, 
-      "description": "Our Sun is a 4.5 billion-year-old star - a hot glowing ball of hydrogen and helium at the center of our solar system. Without its energy, life as we know it could not exist here on our home planet.",
-      "distance": "152 mil. km",
-      "travel":"9 days"
-    },
-    {
-      "name": "Mercury", 
-      "images": {
-        "png":"../assets/destination/Mercury-removebg-preview.png"
-      }, 
-      "description": "The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon. From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as seven times brighter.",
-      "distance": "216 mil. km",
-      "travel":"6.5 Years"
-    },
-    {
-      "name": "Venus", 
-      "images": {
-        "png":"../assets/destination/Venus-removebg-preview.png"
-      }, 
-      "description": "Venus is the second planet from the Sun and is Earth's closest planetary neighbor. It's one of the four inner, terrestrial (or rocky) planets, and it's often called Earth's twin because it's similar in size and density. These are not identical twins, however - there are radical differences between the two worlds.",
-      "distance": "259 mil. km",
-      "travel":"198 days"
-    },
-    {
       "name": "Earth",
       "images": {
         "png":"../assets/destination/earth.png"
@@ -53,42 +26,6 @@
       "description": "Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It's two and a half times the size of Everest!",
       "distance": "225 mil. km",
       "travel": "9 months"
-    },
-    {
-      "name": "Jupiter",
-      "images": {
-        "png": "../assets/destination/Jupiter-removebg-preview.png"
-      },
-      "description": "Jupiter has a long history of surprising scientists - all the way back to 1610 when Galileo Galilei found the first moons beyond Earth. That discovery changed the way we see the universe.",
-      "distance": "965 mil. km",
-      "travel": "1.9 years"
-    },
-    {
-      "name": "Saturn",
-      "images": {
-        "png": "../assets/destination/Saturn.png"
-      },
-      "description": "Jupiter has a long history of surprising scientists - all the way back to 1610 when Galileo Galilei found the first moons beyond Earth. That discovery changed the way we see the universe.",
-      "distance": "1.6 bil. km",
-      "travel": "3-4 years"
-    },
-    {
-      "name": "Uranus",
-      "images": {
-        "png": "../assets/destination/Uranus-removebg-preview.png"
-      },
-      "description": "Jupiter has a long history of surprising scientists - all the way back to 1610 when Galileo Galilei found the first moons beyond Earth. That discovery changed the way we see the universe.",
-      "distance": "3.1 bil. km",
-      "travel": "8.5 years"
-    },
-    {
-      "name": "Neptune",
-      "images": {
-        "png": "../assets/destination/Neptune-removebg-preview.png"
-      },
-      "description": "Jupiter has a long history of surprising scientists - all the way back to 1610 when Galileo Galilei found the first moons beyond Earth. That discovery changed the way we see the universe.",
-      "distance": "4.6 bil. km",
-      "travel": "12 years"
     },
     {
       "name": "Europa",
