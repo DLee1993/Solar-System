@@ -45,6 +45,9 @@ h5{
 
 .subheading_facts-titles{
     letter-spacing: 2.3px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: colorSet(light-clr, pale-purple);
     @include fluidType(font-size, 320px, 2560px, 14px, 24px)
 }
 
