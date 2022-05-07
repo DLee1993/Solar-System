@@ -10,6 +10,9 @@ planetsTL.to(
     "-=0.8"
 );
 
+planetsTL.to(planetItems, {opacity: 1, y: 0, stagger: 0.2}, '-=0.8')
+
+
 planetItems.forEach((planet) => {
     planet.classList.add('hover');
     planet.addEventListener("click", (e) => {

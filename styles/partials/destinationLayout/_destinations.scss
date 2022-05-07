@@ -76,6 +76,8 @@
                 & li {
                     position: relative;
                     width: fit-content;
+                    transform: translateY(10px);
+                    opacity: 0;
 
                     &:hover{
                         cursor: pointer;

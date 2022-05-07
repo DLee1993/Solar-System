@@ -668,6 +668,9 @@ h5 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  opacity: 0;
 }
 
 .planet-content .flex-container .planet-text .planet-list li:hover {

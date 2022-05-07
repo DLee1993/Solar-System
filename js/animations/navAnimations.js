@@ -14,18 +14,14 @@ const runMobileAnim = () => {
 const runTabletAnim = () => {
     tl.to(logoIcon, { x: 0, opacity: 1 });
     tl.to(navItemList, { opacity: 1 }, "-=0.8");
-    navItem.forEach((item) => {
-        tl.to(item, { y: 0, opacity: 1, duration: 0.3 }, "-=0.2");
-    });
+    tl.to(navItem, { y: 0, opacity: 1, duration: 0.3, stagger: 0.2 });
 };
 
 const runDesktopAnim = () => {
     tl.to(logoIcon, { x: 0, opacity: 1 });
     tl.to(designLine, { x: 0, opacity: 1 });
     tl.to(navItemList, { opacity: 1 }, "-=0.8");
-    navItem.forEach((item) => {
-        tl.to(item, { y: 0, opacity: 1, duration: 0.3 }, "-=0.2");
-    });
+    tl.to(navItem, { y: 0, opacity: 1, duration: 0.3, stagger: 0.2 });
 };
 
 const ready = () => {
