@@ -643,6 +643,7 @@ h5 {
   .planet-content .flex-container .planet-text {
     width: 50%;
     height: 100%;
+    margin-left: 100px;
   }
 }
 
