@@ -16,6 +16,7 @@ planetsTL.to(
 );
 
 planetsTL.to(planetItems, { opacity: 1, y: 0, stagger: 0.2 }, "-=0.8");
+
 planetsTL.fromTo(
     planetName,
     { opacity: 0, y: 10 },

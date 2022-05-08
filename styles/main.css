@@ -547,32 +547,33 @@ h5 {
 }
 
 .planet-content {
-  width: 95%;
-  height: 90%;
-  margin: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .planet-content .page-title {
+  text-align: center;
+  margin: 20px 0;
   opacity: 0;
-  padding: 25px 0 0 40px;
-  letter-spacing: 4.7px;
-  font-weight: 400;
-  text-transform: uppercase;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
-.planet-content .page-title span {
-  margin-right: 10px;
-  opacity: 0.5;
-  font-weight: 800;
-  letter-spacing: 4.7px;
+@media screen and (min-width: 1100px) {
+  .planet-content .page-title {
+    text-align: left;
+    padding: 0px 0 60px 30px;
+    margin: 0;
+  }
 }
 
 .planet-content .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -581,8 +582,7 @@ h5 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 90%;
-  margin-top: 20px;
+  height: 80%;
 }
 
 @media screen and (min-width: 1100px) {
@@ -606,14 +606,12 @@ h5 {
           align-items: center;
   width: 100%;
   height: 50%;
-  margin: 40px 0;
 }
 
 @media screen and (min-width: 1100px) {
   .planet-content .flex-container .planetImg-container {
     width: 50%;
     height: 100%;
-    margin: 0;
   }
 }
 
@@ -622,19 +620,6 @@ h5 {
 }
 
 .planet-content .flex-container .planet-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 100%;
   height: 50%;
 }
@@ -643,65 +628,11 @@ h5 {
   .planet-content .flex-container .planet-text {
     width: 50%;
     height: 100%;
-    margin-left: 100px;
   }
 }
 
-.planet-content .flex-container .planet-text .planet-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+.planet-content .flex-container .planet-list {
   list-style: none;
-  text-transform: uppercase;
-  width: 100%;
-  max-width: 400px;
-}
-
-.planet-content .flex-container .planet-text .planet-list li {
-  position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-  opacity: 0;
-}
-
-.planet-content .flex-container .planet-text .planet-list li:hover {
-  cursor: pointer;
-}
-
-.planet-content .flex-container .planet-text .planet-name {
-  opacity: 0;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-}
-
-.planet-content .flex-container .planet-text .planet-info {
-  width: 100%;
-  height: 128px;
-  max-width: 327px;
-  font-weight: 400;
-  line-height: 32px;
-  opacity: 0;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-}
-
-@media screen and (min-width: 600px) {
-  .planet-content .flex-container .planet-text .planet-info {
-    max-width: 573px;
-  }
-}
-
-.planet-content .flex-container .planet-text .planet-facts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -713,26 +644,72 @@ h5 {
           align-items: center;
   width: 100%;
   max-width: 400px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 20px;
+  margin: 20px auto 40px auto;
 }
 
 @media screen and (min-width: 1100px) {
-  .planet-content .flex-container .planet-text .planet-facts {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  .planet-content .flex-container .planet-list {
+    margin: 20px 0 40px 0;
   }
 }
 
-.planet-content .flex-container .planet-text .planet-facts .distance p, .planet-content .flex-container .planet-text .planet-facts .travel-time p {
+.planet-content .flex-container .planet-list li {
   opacity: 0;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
+  cursor: pointer;
+}
+
+.planet-content .flex-container .planet-name {
+  margin: 30px 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 1100px) {
+  .planet-content .flex-container .planet-name {
+    text-align: left;
+  }
+}
+
+.planet-content .flex-container .planet-info {
+  margin: 10px auto 50px auto;
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
+}
+
+@media screen and (min-width: 1100px) {
+  .planet-content .flex-container .planet-info {
+    text-align: left;
+    margin: 10px 0 50px 0;
+  }
+}
+
+.planet-content .flex-container .planet-facts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 1100px) {
+  .planet-content .flex-container .planet-facts {
+    margin: 0;
+  }
+}
+
+.planet-content .flex-container .planet-facts .subheading_planet-facts {
+  text-transform: uppercase;
+  margin-top: 5px;
 }
 
 .active-planet::after {
