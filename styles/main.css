@@ -550,9 +550,7 @@ h5 {
 
 .planet-content {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
   padding-bottom: 50px;
 }
 
