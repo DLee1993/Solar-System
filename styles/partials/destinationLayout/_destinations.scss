@@ -132,6 +132,7 @@
 }
 
 .active-planet {
+    color: white !important;
     &::after {
         content: "";
         position: absolute;
