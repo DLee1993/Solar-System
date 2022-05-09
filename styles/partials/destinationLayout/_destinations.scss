@@ -12,6 +12,9 @@
         margin: 20px 0;
         opacity: 0;
         transform: translateY(10px);
+        text-transform: uppercase;
+        letter-spacing: 4.7px;
+        font-weight: 400;
 
         @include laptop-desktops{
             text-align: left;
@@ -81,6 +84,7 @@
                 transform: translateY(10px);
                 cursor: pointer;
                 text-transform: uppercase;
+                color: colorSet(light-clr, pale-purple);
             }
         }
 
