@@ -1,5 +1,5 @@
 // This is used to import the data from the json file
-import data from "./data.json" assert { type: "json" };
+import data from "../data.json" assert { type: "json" };
 
 function dataLoop(planetName) {
     for (var destinations in data) {
