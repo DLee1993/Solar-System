@@ -21,6 +21,11 @@
             padding: 0px 0 10px 30px;
             margin: 0;
         }
+
+        & span{
+            color: colorSet(light-clr, grey);
+            font-weight: 800;
+        }
     }
 
     & .flex-container{

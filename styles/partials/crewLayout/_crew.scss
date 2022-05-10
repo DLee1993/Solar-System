@@ -1,0 +1,21 @@
+.crew-content{
+    & .page-title{
+        text-align: center;
+        margin: 20px 0;
+        transform: translateY(10px);
+        text-transform: uppercase;
+        letter-spacing: 4.7px;
+        font-weight: 400;
+
+        @include laptop-desktops{
+            text-align: left;
+            padding: 0px 0 10px 30px;
+            margin: 0;
+        }
+
+        & span{
+            color: colorSet(light-clr, grey);
+            font-weight: 800;
+        }
+    }
+}
