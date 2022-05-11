@@ -120,22 +120,15 @@
 
         & .planet-facts {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items: center;
-            flex-direction: column;
-            text-align: center;
             width: 90%;
-            height: 25vh;
             max-width: 700px;
             margin: 0 auto;
             padding-top: 5px;
 
             @include laptop-desktops {
                 margin: 0;
-                height: auto;
-                justify-content: space-between;
-                flex-direction: row;
-                text-align: left;
             }
 
             & .subheading_planet-facts {
