@@ -64,15 +64,13 @@ planetItems.forEach((planet) => {
                 { height: 0, ease: "back.inOut(1.5)", duration: 1.3 },
                 { height: "90%", ease: "back.inOut(1.5)", duration: 1.3 }
             );
-            planetsTL.fromTo(
+            planetsTL.to(
                 planetName,
-                { opacity: 0, y: 10 },
                 { opacity: 1, y: 0 },
                 "-=0.5"
             );
-            planetsTL.fromTo(
+            planetsTL.to(
                 planetInfo,
-                { opacity: 0, y: 10 },
                 { opacity: 1, y: 0 },
                 "-=0.5"
             );
@@ -82,15 +80,13 @@ planetItems.forEach((planet) => {
                 { borderTop: "1px solid gray" },
                 "-=0.5"
             );
-            planetsTL.fromTo(
+            planetsTL.to(
                 planetDistance,
-                { opacity: 0, y: 10 },
                 { opacity: 1, y: 0, stagger: 0.2 },
                 "-=0.5"
             );
-            planetsTL.fromTo(
+            planetsTL.to(
                 planetTravelTime,
-                { opacity: 0, y: 10 },
                 { opacity: 1, y: 0, stagger: 0.2 },
                 "-=0.7"
             );

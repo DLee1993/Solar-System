@@ -687,6 +687,9 @@ h5 {
 .planet-content .flex-container .planet-name {
   margin: 10px 0;
   text-align: center;
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 @media screen and (min-width: 1100px) {
@@ -701,6 +704,9 @@ h5 {
   text-align: center;
   width: 90%;
   max-width: 700px;
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 @media screen and (min-width: 1100px) {
@@ -749,6 +755,18 @@ h5 {
 .planet-content .flex-container .planet-facts .subheading_planet-facts {
   text-transform: uppercase;
   margin-top: 5px;
+}
+
+.planet-content .flex-container .planet-facts .distance p {
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.planet-content .flex-container .planet-facts .travel-time p {
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .active-planet {

@@ -1,13 +1,13 @@
-.planet-content{
+.planet-content {
     width: 100%;
     height: 100%;
     padding-bottom: 50px;
 
-    @include laptop-desktops{
+    @include laptop-desktops {
         padding-bottom: 0;
     }
 
-    & .page-title{
+    & .page-title {
         text-align: center;
         margin: 20px 0;
         opacity: 0;
@@ -16,19 +16,19 @@
         letter-spacing: 4.7px;
         font-weight: 400;
 
-        @include laptop-desktops{
+        @include laptop-desktops {
             text-align: left;
             padding: 0px 0 10px 30px;
             margin: 0;
         }
 
-        & span{
+        & span {
             color: colorSet(light-clr, grey);
             font-weight: 800;
         }
     }
 
-    & .flex-container{
+    & .flex-container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -36,41 +36,41 @@
         width: 100%;
         height: 100%;
 
-        @include laptop-desktops{
+        @include laptop-desktops {
             flex-direction: row;
             height: 80%;
         }
 
-        & .planetImg-container{
+        & .planetImg-container {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
             height: 50%;
 
-            @include laptop-desktops{
+            @include laptop-desktops {
                 align-items: flex-end;
                 width: 50%;
                 height: 70vh;
             }
 
-            & .planet-image{
+            & .planet-image {
                 height: 0;
                 width: auto;
             }
         }
 
-        & .planet-text{
+        & .planet-text {
             width: 100%;
             height: 50%;
 
-            @include laptop-desktops{
+            @include laptop-desktops {
                 width: 50%;
                 height: 100%;
             }
         }
 
-        & .planet-list{
+        & .planet-list {
             list-style: none;
             display: flex;
             justify-content: space-between;
@@ -79,7 +79,7 @@
             max-width: 400px;
             margin: 20px auto;
 
-            @include laptop-desktops{
+            @include laptop-desktops {
                 margin: 20px 0 25px 0;
             }
 
@@ -92,29 +92,33 @@
             }
         }
 
-        & .planet-name{
+        & .planet-name {
             margin: 10px 0;
             text-align: center;
+            opacity: 0;
+            transform: translateY(10px);
 
-            @include laptop-desktops{
+            @include laptop-desktops {
                 text-align: left;
                 margin: 30px 0 10px 0;
             }
         }
 
-        & .planet-info{
+        & .planet-info {
             margin: 10px auto 50px auto;
             text-align: center;
             width: 90%;
             max-width: 700px;
+            opacity: 0;
+            transform: translateY(10px);
 
-            @include laptop-desktops{
+            @include laptop-desktops {
                 text-align: left;
                 margin: 10px 0 30px 0;
             }
         }
 
-        & .planet-facts{
+        & .planet-facts {
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -126,7 +130,7 @@
             margin: 0 auto;
             padding-top: 5px;
 
-            @include laptop-desktops{
+            @include laptop-desktops {
                 margin: 0;
                 height: auto;
                 justify-content: space-between;
@@ -134,9 +138,19 @@
                 text-align: left;
             }
 
-            & .subheading_planet-facts{
+            & .subheading_planet-facts {
                 text-transform: uppercase;
                 margin-top: 5px;
+            }
+
+            & .distance p {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            & .travel-time p {
+                opacity: 0;
+                transform: translateY(10px);
             }
         }
     }
