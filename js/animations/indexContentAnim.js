@@ -16,7 +16,7 @@ ScrollTrigger.matchMedia({
         indexTL.to(exploreCTA, {width: '242px', height: '242px', ease: 'back.inOut(1.7)', duration: 1.2})
     },
     "(min-width: 1100px)": () => {
-        indexTL.to(exploreCTA, {width: '300px', height: '300px', ease: 'back.inOut(1.7)', duration: 1.2}, '-=0.5')
+        indexTL.to(exploreCTA, {width: '250px', height: '250px', ease: 'back.inOut(1.7)', duration: 1.2}, '-=0.5')
     },
 });
 
