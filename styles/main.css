@@ -721,7 +721,13 @@ h5 {
           align-items: center;
   width: 90%;
   max-width: 550px;
-  padding-top: 10px;
+  padding: 10px 0 50px 0;
+}
+
+@media screen and (min-width: 1100px) {
+  .planet-content .flex-container .planet-text .planet-facts {
+    padding: 10px 0 0 0;
+  }
 }
 
 .planet-content .flex-container .planet-text .planet-facts .distance p,
