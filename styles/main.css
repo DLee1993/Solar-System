@@ -645,9 +645,7 @@ h5 {
 
 .planet-content .flex-container .planet-text {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
