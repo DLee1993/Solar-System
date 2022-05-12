@@ -559,7 +559,10 @@ h5 {
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
+  opacity: 0;
   margin: 0 0 20px 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .planet-content .page-title span {
@@ -571,7 +574,7 @@ h5 {
 @media screen and (min-width: 1100px) {
   .planet-content .page-title {
     text-align: left;
-    margin: 0 0 50px 20px;
+    margin: 0 0 20px 20px;
   }
 }
 
@@ -615,7 +618,7 @@ h5 {
 @media screen and (min-width: 1100px) {
   .planet-content .flex-container .planetImg-container {
     width: 50%;
-    height: 85vh;
+    height: 68vh;
   }
 }
 
@@ -666,7 +669,7 @@ h5 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin: 0;
+    margin: 0 0 20px 0;
   }
 }
 
@@ -689,7 +692,7 @@ h5 {
 
 @media screen and (min-width: 1100px) {
   .planet-content .flex-container .planet-text .planet-name {
-    margin: 0;
+    margin: 0 0 0 -10px;
   }
 }
 
