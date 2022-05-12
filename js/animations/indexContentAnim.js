@@ -10,7 +10,7 @@ indexTL.to(subheading, {y: 0, opacity: 1}, '-=0.3');
 
 ScrollTrigger.matchMedia({
     "(max-width: 600px)": () => {
-        indexTL.to(exploreCTA, {width: '150px', height: '150px', ease: 'back.inOut(1.7)', duration: 0.8})
+        indexTL.to(exploreCTA, {width: '175px', height: '175px', ease: 'back.inOut(1.7)', duration: 0.8})
     },
     "(min-width: 601px) and (max-width: 1099px)": () => {
         indexTL.to(exploreCTA, {width: '242px', height: '242px', ease: 'back.inOut(1.7)', duration: 1.2})
