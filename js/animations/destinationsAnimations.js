@@ -57,7 +57,7 @@ planetItems.forEach((planet) => {
             planetsTL.fromTo(
                 planetImage,
                 { height: 0, ease: "back.inOut(1.5)", duration: 1.3 },
-                { height: "90%", ease: "back.inOut(1.5)", duration: 1.3 }
+                { height: "75%", ease: "back.inOut(1.5)", duration: 1.3 }
             );
             planetsTL.fromTo(
                 planetName,
