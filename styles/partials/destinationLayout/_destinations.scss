@@ -84,6 +84,11 @@
             & .planet-name {
                 opacity: 0;
                 transform: translateY(10px);
+                margin: 20px 0;
+
+                @include laptop-desktops{
+                    margin: 0;
+                }
             }
 
             & .planet-info {
