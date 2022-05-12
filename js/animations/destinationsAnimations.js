@@ -11,7 +11,7 @@ const planetsTL = gsap.timeline({ delay: 1.2 }),
 planetsTL.to(pageTitle, { opacity: 1, y: 0 });
 planetsTL.to(
     planetImage,
-    { height: "90%", ease: "back.inOut(1.5)", duration: 1.5 },
+    { height: "75%", ease: "back.inOut(1.5)", duration: 1.5 },
     "-=0.8"
 );
 
