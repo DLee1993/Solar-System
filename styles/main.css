@@ -550,227 +550,26 @@ h5 {
 
 .planet-content {
   width: 100%;
-  height: 100%;
-  padding-bottom: 50px;
-}
-
-@media screen and (min-width: 1100px) {
-  .planet-content {
-    padding-bottom: 0;
-  }
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: red;
 }
 
 .planet-content .page-title {
-  text-align: center;
-  margin: 20px 0;
-  opacity: 0;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-  text-transform: uppercase;
-  letter-spacing: 4.7px;
-  font-weight: 400;
-}
-
-@media screen and (min-width: 1100px) {
-  .planet-content .page-title {
-    text-align: left;
-    padding: 0px 0 10px 30px;
-    margin: 0;
-  }
-}
-
-.planet-content .page-title span {
-  color: #979797;
-  font-weight: 800;
+  background-color: blue;
 }
 
 .planet-content .flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
-
-@media screen and (min-width: 1100px) {
-  .planet-content .flex-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    height: 80%;
-  }
+  background-color: pink;
 }
 
 .planet-content .flex-container .planetImg-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 50%;
-  margin: 50px 0;
-}
-
-@media screen and (min-width: 1100px) {
-  .planet-content .flex-container .planetImg-container {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    width: 50%;
-    height: 70vh;
-    margin: 0;
-  }
-}
-
-.planet-content .flex-container .planetImg-container .planet-image {
-  height: 0;
-  width: auto;
+  background-color: purple;
 }
 
 .planet-content .flex-container .planet-text {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-@media screen and (min-width: 1100px) {
-  .planet-content .flex-container .planet-text {
-    width: 50%;
-    height: 100%;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-
-.planet-content .flex-container .planet-list {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 90%;
-  max-width: 400px;
-  margin: 20px auto;
-}
-
-@media screen and (min-width: 1100px) {
-  .planet-content .flex-container .planet-list {
-    margin: 20px 0 25px 0;
-  }
-}
-
-.planet-content .flex-container .planet-list li {
-  opacity: 0;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-  cursor: pointer;
-  text-transform: uppercase;
-  color: #D0D6F9;
-}
-
-.planet-content .flex-container .planet-name {
-  margin: 10px 0;
-  text-align: center;
-  opacity: 0;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-}
-
-@media screen and (min-width: 1100px) {
-  .planet-content .flex-container .planet-name {
-    text-align: left;
-    margin: 30px 0 10px 0;
-  }
-}
-
-.planet-content .flex-container .planet-info {
-  margin: 10px auto 50px auto;
-  text-align: center;
-  width: 90%;
-  max-width: 700px;
-  opacity: 0;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-}
-
-@media screen and (min-width: 1100px) {
-  .planet-content .flex-container .planet-info {
-    text-align: left;
-    margin: 10px 0 30px 0;
-  }
-}
-
-.planet-content .flex-container .planet-facts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 90%;
-  max-width: 700px;
-  margin: 0 auto;
-  padding-top: 5px;
-}
-
-@media screen and (min-width: 1100px) {
-  .planet-content .flex-container .planet-facts {
-    margin: 0;
-  }
-}
-
-.planet-content .flex-container .planet-facts .subheading_planet-facts {
-  text-transform: uppercase;
-  margin-top: 5px;
-}
-
-.planet-content .flex-container .planet-facts .distance p {
-  opacity: 0;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-}
-
-.planet-content .flex-container .planet-facts .travel-time p {
-  opacity: 0;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
+  background-color: green;
 }
 
 .active-planet {
