@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Frontend Mentor | Space tourism website</title>
         <link rel="stylesheet" href="./styles/main.css" />
-        <script type="module" src="./js/app.js" defer></script>
         <script src="./js/nav/nav.js" defer></script>
         <script src="./js/animations/navAnimations.js" defer></script>
         <script src="./js/animations/indexContentAnim.js" defer></script>
@@ -49,19 +48,24 @@
         </nav>
         <main class="main-content">
             <section class="welcome-section">
-                <section class="welcome-text">
-                    <h5 class="supheading">so, you want to travel to</h5>
-                    <h1 class="heading">space</h1>
-                    <p class="subheading">
-                        Let's face it; if you want to go to space, you might as
-                        well genuinely go to outer space and not hover kind of
-                        on the edge of it. Well sit back, and relax because
-                        we'll give you a truly out of this world experience!
-                    </p>
+                <section class="welcome-text-flex">
+                    <section class="welcome-text-container">
+                        <h5 class="supheading">so, you want to travel to</h5>
+                        <h1 class="heading">space</h1>
+                        <p class="subheading">
+                            Let's face it; if you want to go to space, you might
+                            as well genuinely go to outer space and not hover
+                            kind of on the edge of it. Well sit back, and relax
+                            because we'll give you a truly out of this world
+                            experience!
+                        </p>
+                    </section>
                 </section>
-                <a class="explore-cta" href="./html/destinations.html"
-                    >explore</a
-                >
+                <section class="cta">
+                    <a class="explore-cta" href="./html/destinations.html"
+                        >explore</a
+                    >
+                </section>
             </section>
         </main>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
