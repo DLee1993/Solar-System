@@ -9,8 +9,8 @@
         text-transform: uppercase;
         letter-spacing: 4.7px;
         font-weight: 400;
-        // opacity: 0;
-        // transform: translateY(10px);
+        opacity: 0;
+        transform: translateY(10px);
 
         @include tablet-portrait {
             text-align: left;
@@ -24,100 +24,128 @@
         }
     }
 
-    & .contentFlex-container{
+    & .contentFlex-container {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column-reverse;
+        margin-top: 50px;
 
-        @include tablet-portrait{
+        @include tablet-portrait {
             flex-direction: column;
+            margin: 0;
         }
 
-        @include laptop-desktops{
+        @include laptop-desktops {
             flex-direction: row;
+            height: 100vh;
         }
 
-        & .crewMember-container{
+        & .crewMember-container {
             display: flex;
             justify-content: space-evenly;
             align-items: flex-start;
             flex-direction: column-reverse;
             text-align: center;
 
-            @include tablet-portrait{
+            @include tablet-portrait {
                 margin: 100px 0;
                 flex-direction: column;
             }
 
-            @include laptop-desktops{
+            @include laptop-desktops {
                 text-align: left;
                 height: 350px;
             }
 
-
-            & .crew-content{
-                & .crew-position{
+            & .crew-content {
+                @include laptop-desktops{
+                    width: 500px;
+                }
+                & .crew-position {
                     text-transform: uppercase;
                     font-weight: 400;
                     color: colorSet(light-clr, grey);
-                    margin-bottom: 30px;
+                    margin-bottom: 40px;
+                    opacity: 0;
+                    transform: translateY(10px);
                 }
 
-                & .crew-bio{
+                & .crew-name {
+                    opacity: 0;
+                    transform: translateY(10px);
+                }
+
+                & .crew-bio {
                     width: auto;
                     max-width: 444px;
-                    margin: 30px 0 100px 0;
+                    margin: 40px 0 100px 0;
+                    opacity: 0;
+                    transform: translateY(10px);
 
-                    @include tablet-portrait{
+                    @include tablet-portrait {
                         margin: 30px 0 0 0;
                     }
                 }
             }
 
-            & .slide-indicators{
+            & .slide-indicators {
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
                 margin: 20px auto 30px auto;
 
-                @include tablet-portrait{
+                @include tablet-portrait {
                     margin: 50px auto 20px auto;
                 }
 
-                @include laptop-desktops{
-                    margin: 50px 0 0 0;
+                @include laptop-desktops {
+                    margin: 0;
                 }
 
-                & div{
+                & div:first-of-type{
+                    background-color: white;
+                }
+
+                & div {
                     width: 15px;
                     height: 15px;
                     border-radius: 50%;
                     background-color: colorSet(light-clr, grey);
-                    opacity: 0.5;
                     margin-right: 20px;
+                    opacity: 0;
+                    transform: translateY(10px);
 
-                    &:hover{
+                    &:hover {
                         cursor: pointer;
+                        background-color: white;
                     }
                 }
             }
         }
 
-        & .crew-image{
+        & .crew-image {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
             border-bottom: 1px solid colorSet(light-clr, grey);
             margin: 50px 0 20px 0;
+            height: 100%;
 
-            @include tablet-portrait{
+            @include tablet-portrait {
                 margin: 0;
             }
 
-            @include laptop-desktops{
+            @include laptop-desktops {
+                width: 444px;
                 border-bottom: none;
             }
-            & img{
-                width: 100%;
-                max-width: 400px;
+
+            & img {
+                width: auto;
+                height: 80%;
+                opacity: 0;
+                transform: translateY(10px);
             }
         }
     }
