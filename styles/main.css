@@ -1022,10 +1022,17 @@ h5 {
 
 .crew-content .contentFlex-container .crew-image img {
   width: auto;
+  max-width: 400px;
   height: 80%;
   opacity: 0;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
+}
+
+@media screen and (min-width: 600px) {
+  .crew-content .contentFlex-container .crew-image img {
+    max-width: none;
+  }
 }
 
 * {
