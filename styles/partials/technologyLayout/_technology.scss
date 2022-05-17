@@ -1,0 +1,31 @@
+.tech-content {
+    width: 100%;
+    height: fit-content;
+
+    & .page-title {
+        text-transform: uppercase;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 0 20px 0;
+
+        & span {
+            font-weight: 800;
+            margin-right: 10px;
+            color: colorSet(light-clr, grey);
+        }
+
+        @include laptop-desktops {
+            text-align: left;
+            margin: 0 0 20px 20px;
+        }
+    }
+
+    & .technology-container {
+        display: flex;
+        flex-direction: column;
+
+        @include laptop-desktops {
+            flex-direction: row-reverse;
+        }
+    }
+}
