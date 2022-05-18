@@ -38,7 +38,7 @@
 
         @include laptop-desktops {
             flex-direction: row;
-            height: 100vh;
+            height: 70vh;
         }
 
         & .crewMember-container {
@@ -55,7 +55,7 @@
 
             @include laptop-desktops {
                 text-align: left;
-                height: 350px;
+                height: 300px;
             }
 
             & .crew-content {
@@ -69,6 +69,10 @@
                     margin-bottom: 40px;
                     opacity: 0;
                     transform: translateY(10px);
+
+                    @include laptop-desktops{
+                        margin-bottom: 20px;
+                    }
                 }
 
                 & .crew-name {
@@ -138,6 +142,7 @@
 
             @include laptop-desktops {
                 width: 444px;
+                margin: 50px 0 0 0;
                 border-bottom: none;
             }
 
@@ -150,6 +155,10 @@
 
                 @include tablet-portrait{
                     max-width: none;
+                }
+
+                @include laptop-desktops{
+                    height: 100%;
                 }
             }
         }
