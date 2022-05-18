@@ -27,5 +27,22 @@
         @include laptop-desktops {
             flex-direction: row-reverse;
         }
+
+        & .tech-image{
+            & .mobile-image{
+                display: block;
+
+                @include laptop-desktops{
+                    display: none;
+                }
+            }
+            & .desktop-image{
+                display: none;
+
+                @include laptop-desktops{
+                    display: block;
+                }
+            }
+        }
     }
 }

@@ -1081,6 +1081,26 @@ h5 {
   }
 }
 
+.tech-content .technology-container .tech-image .mobile-image {
+  display: block;
+}
+
+@media screen and (min-width: 1100px) {
+  .tech-content .technology-container .tech-image .mobile-image {
+    display: none;
+  }
+}
+
+.tech-content .technology-container .tech-image .desktop-image {
+  display: none;
+}
+
+@media screen and (min-width: 1100px) {
+  .tech-content .technology-container .tech-image .desktop-image {
+    display: block;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
