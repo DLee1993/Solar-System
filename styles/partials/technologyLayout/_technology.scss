@@ -1,6 +1,6 @@
 .tech-content {
     width: 100%;
-    height: fit-content;
+    height: 100%;
 
     & .page-title {
         text-transform: uppercase;
@@ -24,10 +24,17 @@
 
     & .technology-container {
         display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         flex-direction: column;
         width: 90%;
+        height: 90%;
         margin: 0 auto;
         text-align: center;
+
+        @include tablet-portrait{
+            height: auto;
+        }
 
         @include laptop-desktops {
             flex-direction: row-reverse;
@@ -41,11 +48,12 @@
             align-items: center;
             opacity: 0;
             transform: translateY(10px);
+            height: 100%;
 
             & .mobile-image {
                 display: block;
                 width: 100%;
-                height: auto;
+                height: 90%;
 
                 @include laptop-desktops {
                     display: none;
