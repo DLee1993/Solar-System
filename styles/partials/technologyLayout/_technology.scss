@@ -23,24 +23,97 @@
     & .technology-container {
         display: flex;
         flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
 
         @include laptop-desktops {
             flex-direction: row-reverse;
+            text-align: left;
+            height: 70vh;
         }
 
-        & .tech-image{
-            & .mobile-image{
-                display: block;
+        & .tech-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-                @include laptop-desktops{
+            & .mobile-image {
+                display: block;
+                width: 100%;
+                height: auto;
+
+                @include laptop-desktops {
                     display: none;
                 }
             }
-            & .desktop-image{
+            & .desktop-image {
                 display: none;
 
-                @include laptop-desktops{
+                @include laptop-desktops {
                     display: block;
+                    width: auto;
+                    height: 100%;
+                }
+            }
+        }
+
+        & .tech-text-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+
+            @include laptop-desktops {
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+
+            & .tabs {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+                width: 200px;
+                margin: 30px 0;
+
+                @include laptop-desktops {
+                    flex-direction: column;
+                    align-items: baseline;
+                    width: auto;
+                }
+
+                & div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    border: 1px solid white;
+                    @include fluidType(width, 320px, 1440px, 40px, 80px);
+                    @include fluidType(height, 320px, 1440px, 40px, 80px);
+                    cursor: pointer;
+
+                    @include laptop-desktops {
+                        margin: 0 0 32px 0;
+                    }
+                }
+            }
+
+            & .text-info {
+                width: 100%;
+                max-width: 470px;
+
+                @include laptop-desktops{
+                    margin-left: 50px;
+                }
+
+                & .tech-name{
+                    margin: 20px 0 30px 0;
+                }
+
+                & .tech-desc{
+                    color: colorSet(light-clr, pale-purple);
                 }
             }
         }
